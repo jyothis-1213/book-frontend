@@ -1,7 +1,6 @@
 import { Route, Routes } from "react-router-dom";
 import BookForm from "./page/add-or-edit/BookForm";
 import "./App.css";
-import "./app.css";
 import BookDetails from "./page/details/BookDetails";
 import Home from "./page/home/Home";
 
