@@ -13,10 +13,6 @@ Live Demo
 
 Access the deployed application here: https://book-management-frontend-xi.vercel.app
 
-Ensure you have the following installed:
-
-    Node.js (v14 or higher)
-    npm (v6 or higher)
 
 Setup and Installation
 
