@@ -7,7 +7,7 @@ body {
 .app-container {
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
+  min-height: 90vh;
   min-width: 100vw;
   background-color: #f8f9fa;
 }
@@ -78,11 +78,11 @@ table th {
 }
 
 .btn-delete,
-.btn-update {
+.btn-edit {
   margin-right: 10px; /* Adds space between buttons */
   padding: 5px 10px;
   border: none;
-  border-radius: 5px;
+  border-radius: 6px;
   cursor: pointer;
 }
 

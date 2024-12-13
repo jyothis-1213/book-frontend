@@ -59,26 +59,27 @@ const BookForm = () => {
                 await updateBook(id, formData);
                 alert("Book updated successfully!");
             } else {
+                
+
                 await addBook(formData);
                 alert("Book added successfully!");
-            }
-            const addAnother = window.confirm("Do you want to add another book?");
-            if (addAnother) {
-                // Clear form fields for adding another book
-                setFormData({
-                    title: "",
-                    author: "",
-                    publicationDate: "",
-                    isbn: "",
-                    genre: "",
-                    rating: "",
-                    description: ""
-                });
-                setIsEditMode(false); // Reset edit mode if applicable
-            } else {
-                // Navigate to the home page
-                navigate("/", { replace: true });
-                window.location.reload();
+
+                const addAnother = window.confirm("Do you want to add another book?");
+                if (addAnother) {
+                    // Clear form fields for adding another book
+                    setFormData({
+                        title: "",
+                        author: "",
+                        publicationDate: "",
+                        isbn: "",
+                        genre: "",
+                        rating: "",
+                        description: ""
+                    });
+                } else {
+                    navigate("/", { replace: true });
+                    window.location.reload();
+                }
             }
         } catch (error) {
             console.error("Error saving book:", error);
